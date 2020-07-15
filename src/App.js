@@ -12,6 +12,8 @@ class App extends React.Component {
       definition: undefined,
       length: undefined,
     };
+
+    this.getWord = this.getWord.bind(this);
   }
 
   getWord = async (event) => {
@@ -52,9 +54,9 @@ class App extends React.Component {
         <Words key={id++} id={id} word={this.state.word} def={def.definition} />
       ));
     } else if (this.state.length == 0) {
-      listWords = <div>Empty</div>;
+      listWords = <div className="nowordBox">Такого слова нет :(</div>;
     } else if (listWords === null) {
-      listWords = <div>Только запустил</div>;
+      listWords = <div></div>;
     }
 
     return (

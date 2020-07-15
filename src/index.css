@@ -6,8 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  width: 80%;
-  padding: 0% 10% 0% 10%;
+  width: 60%;
+  padding: 0% 20% 0% 20%;
+
+  background-color: #171d2e;
 }
 
 code {
@@ -15,10 +17,69 @@ code {
     monospace;
 }
 
-form {
-  background-color: aqua;
+.searchBox {
+  padding: 30px 0px 10px 0px;
+}
 
-  text-align: center;
+form {
+  display: flex;
+}
+
+input {
+  width: 70%;
+  height: 40px;
+
+  border-radius: 30px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  
+  background-color: #2f3640;
+}
+
+input[type=text] {
+  padding-left: 15px;
+  color: gray;
+}
+
+button { 
+  width: 30%;
+  margin-left: 5%;
+
+  border-radius: 30px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+
+  background-color: #dadada;
+}
+
+.wordBox {
+  background-color: #e8f0fe;
+  margin: 20px 0px 20px 0px;
+
+  padding: 10px;
+}
+
+.wordBox h1 {
+  display: inline;
+  font-size: 30px;
+}
+
+.word p {
+  font-size: 18px;
+}
+
+.nowordBox {
+  background-color: #e8f0fe;
+  margin: 20px 0px 20px 0px;
+  height: 100px;
+
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  padding: 10px;
 }

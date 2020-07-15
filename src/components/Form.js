@@ -1,13 +1,15 @@
-import React from 'react';
+import React from "react";
 
 class Form extends React.Component {
   render() {
-     return (
-       <form onSubmit={this.props.getWord}>
-         <input type="text" name="word" placeholder="Слово" />
-         <button>Поиск слова</button>
-       </form>
-     )
+    return (
+      <div className="searchBox">
+        <form onSubmit={this.props.getWord}>
+          <input type="text" name="word" placeholder="Введите слово" />
+          <button>Поиск</button>
+        </form>
+      </div>
+    );
   }
 }
 
